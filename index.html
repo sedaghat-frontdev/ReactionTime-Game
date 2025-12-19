@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style/master.css">
+  <link rel="stylesheet" href="style/FontIcons/remixicon.css">
+</head>
+
+<body>
+  <main class="sec">
+    <div>
+      <h1>Click on the box when its GREEN !</h1>
+    </div>
+    <div>
+      <div class="box"></div>
+    </div>
+    <div><button id="btn">Start</button></div>
+  </main>
+
+
+   <div class="footer">
+    <div><figure><img src="style/reaction.jpg" alt=""></figure></div>
+    <div>
+      <div><a href="https://github.com/sedaghat-frontdev"><i class="ri-github-line"></i></a></div>
+      <div><a href="https://www.instagram.com/sedaghat-frontdev/"><i class="ri-instagram-line"></i></a></div>
+      <div><a href="mailto:rezzasedaghat@gmail.com"><i class="ri-mail-line"></i></a></div>
+    </div>
+    <div>
+      <div><h1>MohammadReza Sedaghat</h1></div>
+      <div><h1>Sedaghat-FrontDev</h1></div>
+      <div><h1>Hope you`ve enjoyed !</h1></div>
+    </div>
+  </div>
+</body>
+
+<script>
+  const box = document.querySelector('.box')
+  const btn = document.getElementById('btn')
+  let txt = document.querySelector('.sec>div>h1')
+
+  let gameStatus = 'Ready'
+  let startTime = null
+  let timeoutId = null
+
+  btn.addEventListener('click', () => {
+    btn.disabled = true
+    box.style.backgroundColor = 'red'
+    txt.innerText = 'Wait...'
+
+    gameStatus = 'Waiting'
+
+    let rDelay = (Math.floor(Math.random() * 5) + 1) * 1000
+
+    timeoutId = setTimeout(() => {
+      box.style.backgroundColor = 'green'
+      txt.innerText = 'CLICK NOW!'
+      gameStatus = 'Active'
+      startTime = Date.now() // ⏱ فقط اینجا
+    }, rDelay)
+  })
+
+  box.addEventListener('click', () => {
+
+    // ⛔ کلیک زودتر از سبز شدن
+    if (gameStatus === 'Waiting') {
+      txt.innerText = 'Too Soon!'
+      clearTimeout(timeoutId)
+      btn.disabled = false
+      btn.innerText = 'Try again'
+      gameStatus = 'Finished'
+      return
+    }
+
+    // ⛔ اگر Active نیست، هیچ کاری نکن
+    if (gameStatus !== 'Active') return
+
+    // ✅ محاسبه صحیح
+    let reactionTime = Date.now() - startTime
+    txt.innerText = reactionTime + ' ms'
+
+    gameStatus = 'Finished'
+    btn.disabled = false
+    btn.innerText = 'Play again'
+  })
+</script>
+
+
+</html>
