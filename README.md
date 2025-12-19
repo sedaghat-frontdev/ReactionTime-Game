@@ -7,15 +7,15 @@
 
 A Game with rythm and hard algorythm using HTML and CSS3 and JavaScript! .
 
-<img width="1900" height="967" alt="Image" src="https://github.com/user-attachments/assets/678f7f4c-ba8b-46e1-a749-e1a931a776de" />
+<img width="1901" height="970" alt="Image" src="https://github.com/user-attachments/assets/b964f969-0e4d-48f6-b531-90b43eca78c3" />
 <br/>
-<img width="1903" height="955" alt="Image" src="https://github.com/user-attachments/assets/9a292c45-fc6a-4c5e-946e-3f1c80b4c01a" />
+<img width="1901" height="932" alt="Image" src="https://github.com/user-attachments/assets/3153baef-997a-47b0-b8db-3098c85dedde" />
 <br/>
-<img width="1902" height="966" alt="Image" src="https://github.com/user-attachments/assets/2eec53ae-ae88-4635-9985-71ea62f4a60a" />
+<img width="1901" height="970" alt="Image" src="https://github.com/user-attachments/assets/f04a4a9a-bb8c-4a4d-a356-4fb978a4da6c" />
 <br/>
-<img width="1901" height="937" alt="Image" src="https://github.com/user-attachments/assets/e24cfdd0-05bb-4ba5-9967-7e265f96bff1" />
+<img width="1900" height="945" alt="Image" src="https://github.com/user-attachments/assets/be856c76-ce24-42c3-985c-a33706e284d3" />
 <br/>
-<img width="1906" height="937" alt="Image" src="https://github.com/user-attachments/assets/1bae050d-95c3-4b6b-bef2-7723f7d732b5" />
+<img width="1903" height="926" alt="Image" src="https://github.com/user-attachments/assets/623e9909-bb0e-42c7-9de9-ad43dd6c20fa" />
 <br/>
 <br/>
 <p align="center">
